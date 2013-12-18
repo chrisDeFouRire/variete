@@ -1,6 +1,6 @@
 {
     "name": "variete",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Variete allows your to vary your copy (useful for descriptions, to avoid repetitive text)",
     "main": "lib/main.js",
     "directories": {

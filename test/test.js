@@ -31,11 +31,11 @@ describe('variete', function () {
             var desc = variete.parse('This {amazing|extraordinary|nice} module {will help me|already helps me} when I {need|have to} vary my copy.');
             desc.should.match(/^This (amazing|extraordinary|nice) module (will help me|already helps me) when I (need|have to) vary my copy.$/);
         });
-        it('shoud throw exceptions with empty text', function() {
+        it('shoud not throw exceptions with empty string', function() {
             var result = function() {return variete.parse('');};
-            result.should.throw();
+            result.should.not.throw();
         });
-        it('shoud throw exceptions when using {} in your text', function() {
+        it('shoud throw exceptions when using { in your text', function() {
             var result = function() {return variete.parse('this should { not work');};
             result.should.throw();
             result = function() {return variete.parse('but this should } work');};

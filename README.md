@@ -18,7 +18,7 @@ var description = variete.parse('This {amazing|extraordinary|nice} module {will 
 
 Now `description` contains a random string (among 3*2*2=12 variations) with the alternatives you've specified.
 
-Note that you can't nest multiple alternatives, and parsing an empty string will fail with an error.
+Note that you can't nest multiple alternatives.
 
 It would be nice if we could seed the random number generator, so that result could depend on an page Id for instance...
 
