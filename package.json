@@ -1,0 +1,19 @@
+{
+    "name": "variete",
+    "version": "0.0.1",
+    "description": "Variete allows your to vary your copy (useful for descriptions, to avoid repetitive text)",
+    "main": "lib/main.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "mocha test/*.js"
+    },
+    "devDependencies": {
+        "mocha": "~1.15.1",
+        "should": ""
+    },
+
+    "author": "Chris Hartwig <chris@chris-hartwig.com>",
+    "license": "MIT"
+}

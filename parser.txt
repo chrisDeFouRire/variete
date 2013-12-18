@@ -1,0 +1,24 @@
+/* The parser was generated online at http://pegjs.majda.cz/online */
+
+start
+  = text
+
+text
+  = segments:segment+ { return segments.join(""); }
+
+segment
+  = either: words
+  / either: alternative
+
+alternative
+  = "{" res:alternativeList "}" {return res[Math.floor(Math.random()*res.length)];}
+
+alternativeList
+  = head:option "|" rest:alternativeList {return [].concat.apply([], [head, rest]);}
+  / alt:option {return alt;}
+
+option
+  = letters:[^|}]+ { return letters.join(""); }
+
+words
+  = letters:[^{]+ { return letters.join(""); }
