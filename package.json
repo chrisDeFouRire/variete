@@ -13,7 +13,10 @@
         "mocha": "~1.15.1",
         "should": ""
     },
-
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/chrisDeFouRire/variete.git"
+    },
     "author": "Chris Hartwig <chris@chris-hartwig.com>",
     "license": "MIT"
 }
