@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a36e4f5f-8ee1-44b4-ba27-3b1f9351c61a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test.js" afterPath="$PROJECT_DIR$/test/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="variete.iws" />
@@ -47,7 +47,7 @@
       <file leaf-file-name="parser.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parser.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="46" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+            <state line="0" column="66" selection-start="38" selection-end="66" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
               <folding />
             </state>
           </provider>
@@ -62,19 +62,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+            <state line="24" column="87" selection-start="894" selection-end="894" vertical-scroll-proportion="0.6557377" vertical-offset="0" max-vertical-offset="549">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="test.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="11" selection-start="2028" selection-end="2028" vertical-scroll-proportion="0.91803277" vertical-offset="126" max-vertical-offset="750">
+            <state line="36" column="11" selection-start="1695" selection-end="1695" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
               <folding />
             </state>
           </provider>
@@ -106,8 +106,8 @@
         <option value="$PROJECT_DIR$/parser.txt" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/test/test.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -314,7 +314,11 @@
       <created>1387358983837</created>
       <updated>1387358983837</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added tests to check for exceptions">
+      <created>1387360209941</created>
+      <updated>1387360209941</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -351,7 +355,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Added tests, must still work on README" />
     <MESSAGE value="Better README" />
-    <option name="LAST_COMMIT_MESSAGE" value="Better README" />
+    <MESSAGE value="Added tests to check for exceptions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added tests to check for exceptions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -360,13 +365,6 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parser.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="46" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
           <folding />
         </state>
       </provider>
@@ -385,16 +383,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/parser.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+        <state line="0" column="66" selection-start="38" selection-end="66" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="11" selection-start="2028" selection-end="2028" vertical-scroll-proportion="0.91803277" vertical-offset="126" max-vertical-offset="750">
+        <state line="36" column="11" selection-start="1695" selection-end="1695" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="87" selection-start="894" selection-end="894" vertical-scroll-proportion="0.6557377" vertical-offset="0" max-vertical-offset="549">
           <folding />
         </state>
       </provider>
