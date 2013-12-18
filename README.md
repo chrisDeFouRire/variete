@@ -1,60 +1,20 @@
 Variété
 ==========
 
-This NPM module will help you when you need to vary your copy.
+This NPM module will help you when you need to vary your copy randomly.
 
 ## Duplicate descriptions? A thing of the past
 
-Say you'd like to use permalinks like `/photos/{userId}/{photoId}.jpg` but you don't want to expose ids, because they're
-ugly and useless to search engines. Meaningful.js can help!
+Say you'd like to output a `description meta`, here's how to do it:
 
 ```
-npm install meaningful
+npm install variete
 ```
 
 ```JavaScript
-var mf = require("meaningful");
-mf.meaningful('Chris Hartwig / amazing user', myUserId, function (sanitizedName) {
-  // sanitizedName is now "Chris-Hartwig-amazing-user" which you can use in the url
-}
+var variete = require("variete");
+var description = variete.parse('This {amazing|extraordinary|nice} module {will help me|already helps me} when I {need|have to} vary my copy.');
 ```
 
-Now imagine your rest api :
-
-```JavaScript
-// the url contains the sanitizedName
-app.get("/photos/:user", function(req, res) {
-  var sanitized = req.params.user; // sanitized == "Chris-Hartwig-amazing-user"
-  mf.idOfMeaningful(sanitized, function(id) {
-    // now you have your id (same as myUserId)
-  }
-}
-```
-
-Does it support collisions? yes, you can have many "values" with different IDs (automatic numerical suffix).
-So if another 'Chris Hartwig / amazing user' registers (with a different user id), his meaningful name will be Chris-Hartwig-amazing-user-1
-
-Does it support modifications? yes, if 'Chris Hartwig / amazing user' changes to a less radical 'Chris Hartwig', the new and the old url will point to the same userId to avoid 404s.
-
-## requirements
-
-The only dependency is for Redis...
-
-You can customize the way you connect to Redis:
-
-```JavaScript
-var mf = require('meaningful');
-
-var client = md.createClient(myVerySpecialURL);
-mf.getClient = function () { // let's overload getClient
-    return client;
-};
-```
-
-## TODO's
-
-- [ ] Maybe I should add a real life example
-- [ ] There's no error handling at all
-- [ ] More tests are needed (mocha)
-- [ ] Someone should benchmark that thing
+Now `description` contains a random string with the alternatives you've specified.
 
